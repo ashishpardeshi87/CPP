@@ -4,33 +4,33 @@ using namespace std;
 
 int main() {
 
-string str = "Hello";
+    string str = "Hello";
 
-     // Concatenation
-     string greeting = str + ", World!";
-     cout << "Concatenation: " << greeting << endl;
+    // Concatenation
+    string greeting = str + ", Avengers!";
+    cout << "Concatenation: " << greeting << endl;
 
     // Substring
-    string part = greeting.substr(7, 5); // Extracts "World"
+    string part = greeting.substr(7, 8); // Extracts "Avengers"
     cout << "Substring: " << part << endl;
 
     // Find
-    size_t pos = greeting.find("World");
-    cout << "Find: 'World' found at position " << pos << endl;
+    size_t pos = greeting.find("Avengers");
+    cout << "Find: 'Avengers' found at position " << pos << endl;
 
     // Replace
     string replaced = greeting;
-    replaced.replace(pos, 5, "C++");
+    replaced.replace(pos, 8, "C++");
     cout << "Replace: " << replaced << endl;
- 
+
     // Insert
     string inserted = greeting;
-    inserted.insert(5, " beautiful");
+    inserted.insert(5, " Powerful");
     cout << "Insert: " << inserted << endl;
 
     // Erase
     string erased = greeting;
-    erased.erase(5, 7); // Removes " beautiful"
+    erased.erase(5, 9); // Removes " Powerful"
     cout << "Erase: " << erased << endl;
 
     // To uppercase
@@ -43,7 +43,5 @@ string str = "Hello";
     for (char &c : lowercase) c = tolower(c);
     cout << "To Lowercase: " << lowercase << endl;
 
-return 0;
-
-  
+    return 0;
 }
